@@ -1,0 +1,55 @@
+{
+  "extends": [
+    "config:base",
+    "group:all",
+    ":automergeDisabled",
+    ":combinePatchMinorReleases",
+    ":disablePeerDependencies",
+    ":ignoreUnstable",
+    ":labels(dependencies,bot)",
+    ":maintainLockFilesDisabled",
+    ":preserveSemverRanges",
+    ":prHourlyLimit4",
+    ":rebaseStalePrs",
+    ":semanticCommits",
+    ":separateMajorReleases",
+    ":preserveSemverRanges",
+    ":timezone(Europe/Warsaw)"
+  ],
+  "stabilityDays": 7,
+  "reviewersFromCodeOwners": true,
+  "docker": {
+    "managerBranchPrefix": "docker-",
+    "commitMessagePrefix": "[DOCKER]"
+  },
+  "js": {
+    "managerBranchPrefix": "js-",
+    "commitMessagePrefix": "[JS]"
+  },
+  "python": {
+    "managerBranchPrefix": "python-",
+    "commitMessagePrefix": "[PYTHON]"
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "react",
+        "react-dom",
+        "react-router",
+        "react-scripts",
+        "@types/react",
+        "@types/react-dom",
+        "@types/react-router",
+        "@types/react-scripts",
+        "@testing-library/react"
+      ],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    },
+    {
+      "managers": ["docker-compose"],
+      "matchPackageNames": ["postgres"],
+      "enabled": false
+    }
+  ]
+}
