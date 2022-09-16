@@ -16,6 +16,9 @@
     ":preserveSemverRanges",
     ":timezone(Europe/Warsaw)"
   ],
+  "schedule": [
+    "before 7am on Friday"
+  ],
   "stabilityDays": 7,
   "reviewersFromCodeOwners": true,
   "docker": {
