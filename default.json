@@ -35,19 +35,16 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": [
-        "react",
-        "react-dom",
-        "react-router",
-        "react-scripts",
-        "@types/react",
-        "@types/react-dom",
-        "@types/react-router",
-        "@types/react-scripts",
-        "@testing-library/react"
-      ],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
+      "managers": ["npm"],
+      "stabilityDays": 14,
+      "schedule": [
+        "every 2 weeks on Friday before 5am"
+      ]
+    },
+    {
+      "managers": ["npm"],
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "devDependencies"
     },
     {
       "managers": ["docker-compose"],
