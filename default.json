@@ -7,7 +7,7 @@
     ":disablePeerDependencies",
     ":ignoreUnstable",
     ":labels(dependencies,bot)",
-    ":maintainLockFilesDisabled",
+    ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
     ":prHourlyLimit4",
     ":rebaseStalePrs",
@@ -23,15 +23,15 @@
   "reviewersFromCodeOwners": true,
   "docker": {
     "managerBranchPrefix": "docker-",
-    "commitMessagePrefix": "[DOCKER]"
+    "commitMessagePrefix": "chore(deps): [DOCKER]"
   },
   "js": {
     "managerBranchPrefix": "js-",
-    "commitMessagePrefix": "[JS]"
+    "commitMessagePrefix": "chore(deps): [JS]"
   },
   "python": {
     "managerBranchPrefix": "python-",
-    "commitMessagePrefix": "[PYTHON]"
+    "commitMessagePrefix": "chore(deps): [PYTHON]"
   },
   "packageRules": [
     {
