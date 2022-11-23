@@ -35,6 +35,11 @@
   },
   "packageRules": [
     {
+      "managers": ["github-actions"],
+      "managerBranchPrefix": "gha-",
+      "commitMessagePrefix": "chore(deps): [GHA]"
+    },
+    {
       "managers": ["npm"],
       "stabilityDays": 14,
       "internalChecksFilter": "strict",
