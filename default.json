@@ -45,7 +45,11 @@
       "internalChecksFilter": "strict",
       "schedule": [
         "every 2 weeks on Friday before 5am"
-      ]
+      ],
+      "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": ["every 2 weeks before 3am on Monday"]
+      }
     },
     {
       "managers": ["npm"],
