@@ -48,7 +48,7 @@
       ],
       "lockFileMaintenance": {
         "enabled": true,
-        "schedule": ["every 2 weeks before 3am on Monday"]
+        "schedule": ["every 2 months before 3am on Monday"]
       }
     },
     {
