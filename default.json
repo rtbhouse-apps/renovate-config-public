@@ -16,10 +16,13 @@
     ":preserveSemverRanges",
     ":timezone(Europe/Warsaw)"
   ],
-  "schedule": [
-    "before 7am on Friday"
-  ],
-  "stabilityDays": 7,
+  "stabilityDays": 14,
+  "internalChecksFilter": "strict",
+  "schedule": ["every 2 weeks on Friday before 5am"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["every 2 weeks on Monday before 5am"]
+  },
   "reviewersFromCodeOwners": true,
   "docker": {
     "managerBranchPrefix": "docker-",
@@ -41,14 +44,8 @@
     },
     {
       "managers": ["npm"],
-      "stabilityDays": 14,
-      "internalChecksFilter": "strict",
-      "schedule": [
-        "every 2 weeks on Friday before 5am"
-      ],
       "lockFileMaintenance": {
-        "enabled": true,
-        "schedule": ["every 2 months before 3am on Monday"]
+        "schedule": ["every 2 months on Monday before 5am"]
       }
     },
     {
