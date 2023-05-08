@@ -16,7 +16,8 @@
     ":preserveSemverRanges",
     ":timezone(Europe/Warsaw)"
   ],
-  "stabilityDays": 14,
+  "configMigration": true,
+  "minimumReleaseAge": "14 days",
   "internalChecksFilter": "strict",
   "schedule": ["every 2 weeks on Friday before 5am"],
   "lockFileMaintenance": {
