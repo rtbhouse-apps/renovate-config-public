@@ -16,6 +16,9 @@
     ":preserveSemverRanges",
     ":timezone(Europe/Warsaw)"
   ],
+  "constraints": {
+    "poetry": "1.5.1"
+  },
   "configMigration": true,
   "minimumReleaseAge": "14 days",
   "internalChecksFilter": "strict",
