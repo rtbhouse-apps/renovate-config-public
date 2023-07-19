@@ -49,7 +49,7 @@
     {
       "managers": ["npm"],
       "lockFileMaintenance": {
-        "schedule": ["every 2 months on Monday before 5am"]
+        "enabled": false
       }
     },
     {
