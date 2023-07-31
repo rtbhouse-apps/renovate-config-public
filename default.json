@@ -61,6 +61,11 @@
       "managers": ["docker-compose"],
       "matchPackageNames": ["postgres"],
       "enabled": false
+    },
+    {
+      "managers": ["html"],
+      "managerBranchPrefix": "html-",
+      "commitMessagePrefix": "chore(deps): [HTML]"
     }
   ]
 }
