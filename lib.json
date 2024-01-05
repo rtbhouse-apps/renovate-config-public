@@ -1,4 +1,9 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "bumpVersion": "patch"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "bumpVersion": "patch"
+    }
+  ]
 }
