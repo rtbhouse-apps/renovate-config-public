@@ -17,15 +17,15 @@
     ":timezone(Europe/Warsaw)"
   ],
   "constraints": {
-    "poetry": "1.7.1"
+    "poetry": "1.8.2"
   },
   "configMigration": true,
   "minimumReleaseAge": "14 days",
   "internalChecksFilter": "strict",
-  "schedule": ["every 2 weeks on Friday before 5am"],
+  "schedule": ["* 2 1,16 * *"],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["every 2 weeks on Monday before 5am"]
+    "schedule": ["* 2 2,17 * *"]
   },
   "reviewersFromCodeOwners": true,
   "docker": {
