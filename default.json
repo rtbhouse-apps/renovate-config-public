@@ -7,7 +7,6 @@
     ":disablePeerDependencies",
     ":ignoreUnstable",
     ":labels(dependencies,bot)",
-    ":maintainLockFilesWeekly",
     ":preserveSemverRanges",
     ":prHourlyLimit4",
     ":rebaseStalePrs",
@@ -22,10 +21,10 @@
   "configMigration": true,
   "minimumReleaseAge": "14 days",
   "internalChecksFilter": "strict",
-  "schedule": ["every 2 weeks on Friday before 5am"],
+  "schedule": ["* 2 1-7,15-22 * 4"],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["every 2 weeks on Monday before 5am"]
+    "schedule": ["* 2 8-14,23-29 * 4 "]
   },
   "reviewersFromCodeOwners": true,
   "docker": {
