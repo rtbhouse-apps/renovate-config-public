@@ -24,7 +24,7 @@
   "schedule": ["* 0-5 1-7,15-22 * 4"],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["* 0-5 8-14,23-29 * 4 "]
+    "schedule": ["* 0-5 8-14,23-29 * 4"]
   },
   "reviewersFromCodeOwners": true,
   "docker": {
