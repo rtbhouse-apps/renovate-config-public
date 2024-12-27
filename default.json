@@ -16,7 +16,7 @@
     ":timezone(Europe/Warsaw)"
   ],
   "constraints": {
-    "poetry": "1.8.2"
+    "poetry": "1.8.5"
   },
   "configMigration": true,
   "minimumReleaseAge": "14 days",
